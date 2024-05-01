@@ -15,7 +15,7 @@ if(isset($_POST['insert_cat'])){
     } else {
         // Insert the category if it doesn't exist
         $insert_query = "INSERT INTO `categories` (category_title) VALUES ('$category_title')";
-        $result = mysqli_query($con, $insert_query);
+        $result =mysqli_query($con, $insert_query);
 
         if($result){
             echo "<script>alert('Category has been inserted successfully')</script>";
